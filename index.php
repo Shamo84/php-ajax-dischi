@@ -21,7 +21,9 @@ include 'db.php';
           foreach ($db as $disco) {
         ?>
         <div class="disco">
-          <img src="<?php echo $disco["poster"];?>" alt="<?php echo $disco["title"];?>">
+          <div class="poster">
+            <img src="<?php echo $disco["poster"];?>" alt="<?php echo $disco["title"];?>">
+          </div>
           <h2><?php echo $disco["title"]?></h2>
           <h3><?php echo $disco["author"]?></h3>
           <p><?php echo $disco["genre"]?></p>

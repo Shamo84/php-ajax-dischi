@@ -21,6 +21,7 @@ header #navbar {
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 0 10px;
 }
 
 header #navbar img {
@@ -51,7 +52,20 @@ main .container .disco {
   text-align: center;
 }
 
-main .container .disco img {
+main .container .disco .poster {
+  height: 64%;
+  display: flex;
+  align-items: center;
+}
+
+main .container .disco .poster img {
   width: 100%;
+}
+
+main .container .disco img,
+main .container .disco h2,
+main .container .disco h3,
+main .container .disco p {
+  margin-bottom: 15px;
 }
 

@@ -15817,10 +15817,13 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
 
-$(document).ready(function functionName() {
+$(document).ready(function () {
   $.ajax({
     url: "http://localhost:81/php-ajax-dischi/server.php",
     method: "GET",
+    data: {
+      author: "All"
+    },
     success: function success(risposta) {
       var source = $("#entry-template").html();
       var template = Handlebars.compile(source);

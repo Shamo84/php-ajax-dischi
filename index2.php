@@ -12,6 +12,9 @@
       </div>
     </header>
     <main>
+      <select class="select" name="author">
+        <option value="All">All</option>
+      </select>
       <div class="container">
 
       </div>
@@ -27,6 +30,9 @@
         <p>{{year}}</p>
       </div>
     </script>
+    <div class="authors hidden">
+      <option value=""></option>
+    </div>
     <script src="dist/app.js" charset="utf-8"></script>
   </body>
 </html>
